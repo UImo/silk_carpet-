@@ -30,12 +30,12 @@ class ComportementJ1 extends Sup.Behavior
     let velociteJ1 = this.actor.arcadeBody2D.getVelocity();
     velociteJ1.y = 0;
     
-    if(Sup.Input.isKeyDown("SHIFT") && this.actor.getY() < 720 - 80)
+    if(Sup.Input.isKeyDown("Z") && this.actor.getY() < 720 - 80)
     {
       velociteJ1.y = 10;
     }
     
-    if(Sup.Input.isKeyDown("CONTROL") && this.actor.getY() > 0 + 80)
+    if(Sup.Input.isKeyDown("S") && this.actor.getY() > 0 + 80)
     {
       velociteJ1.y = -10;
     }
